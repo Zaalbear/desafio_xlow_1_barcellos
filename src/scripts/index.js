@@ -1,3 +1,5 @@
-import { request } from "./requests.js";
+import { render } from "./render.js";
+import { getAllProducts } from "./requests.js";
 
-request()
+console.log(await getAllProducts())
+render(await getAllProducts());

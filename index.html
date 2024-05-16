@@ -1,31 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="./src/scripts/index.js"></script>
     <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="./src/assets/store_icon.svg" type="image/x-icon">
     <title>Desafio 1 xLow</title>
 </head>
-<body>
-    <header>
-        <h2><span><img src="/" alt="generic store logo"></span> Generic Store</h2>
+
+<body id="#root">
+    <header class="header_container">
+        <img class="header_icon" src="./src/assets/store_icon.svg" alt=" generic store logo">
+        <h2 class="header_title"> Generic Store</h2>
     </header>
 
-    <main>
-        <h1>Bem vindos a Generic stonre</h1>
+    <main class="main_container">
+        <h1 class="main_title">Bem vindos a <span class="main_title-store">Generic Store</span></h1>
 
-        <div>
-            <button id="add_button">+</button>
-            <span> 0 </span>
-            <button id="remove_button">-</button>
-        </div>
-
-        <label for="product_list">Produtos:</label>
-        <ul id="product_list" >
-            
+        <h3 class="products_title">Confira nossos <span class="products_counter">2</span> produtos:</h3>
+        <ul class="products_list">
+            <li class="products_item">
+                <img class="product_img"
+                    src="https://images-americanas.b2w.io/produtos/2032009675/imagens/skate-estampado-brink/2032009675_1_large.jpg"
+                    alt="">
+                <h3 class="product_name">Nome do produto</h3>
+                <ul class="alter_list">
+                    <li class="alter_img_container"><img class="alter_img"
+                            src="https://images-americanas.b2w.io/produtos/2032009675/imagens/skate-estampado-brink/2032009675_1_large.jpg"
+                            alt=""></li>
+                    <li class="alter_img_container"><img class="alter_img"
+                            src="https://images-americanas.b2w.io/produtos/2032009675/imagens/skate-estampado-brink/2032009675_1_large.jpg"
+                            alt=""></li>
+                </ul>
+                <p class="product_price">R$: 20,00</p>
+                <button class="buy_button">Comprar</button>
+            </li>
+            <li class="products_item">
+                <img class="product_img"
+                    src="https://images-americanas.b2w.io/produtos/2032009675/imagens/skate-estampado-brink/2032009675_1_large.jpg"
+                    alt="">
+                <h3 class="product_name">Nome do produto</h3>
+                <ul class="alter_list">
+                    <li class="alter_img_container"><img class="alter_img"
+                            src="https://images-americanas.b2w.io/produtos/2032009675/imagens/skate-estampado-brink/2032009675_1_large.jpg"
+                            alt=""></li>
+                    <li class="alter_img_container"><img class="alter_img"
+                            src="https://images-americanas.b2w.io/produtos/2032009675/imagens/skate-estampado-brink/2032009675_1_large.jpg"
+                            alt=""></li>
+                </ul>
+                <p class="product_price">R$: 20,00</p>
+                <button class="buy_button">Comprar</button>
+            </li>
+            <li class="products_item">
+                <img class="product_img"
+                    src="https://images-americanas.b2w.io/produtos/2032009675/imagens/skate-estampado-brink/2032009675_1_large.jpg"
+                    alt="">
+                <h3 class="product_name">Nome do produto</h3>
+                <ul class="alter_list">
+                    <li class="alter_img_container"><img class="alter_img"
+                            src="https://images-americanas.b2w.io/produtos/2032009675/imagens/skate-estampado-brink/2032009675_1_large.jpg"
+                            alt=""></li>
+                    <li class="alter_img_container"><img class="alter_img"
+                            src="https://images-americanas.b2w.io/produtos/2032009675/imagens/skate-estampado-brink/2032009675_1_large.jpg"
+                            alt=""></li>
+                </ul>
+                <p class="product_price">R$: 20,00</p>
+                <button class="buy_button">Comprar</button>
+            </li>
         </ul>
-        <p>Total de produtos: </p>
+
     </main>
 </body>
+
 </html>
