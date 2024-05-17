@@ -21,7 +21,7 @@ Este é um projeto desenvolvido durante o processo seletivo para a vaga de desen
 
 ## Implementação
 
-Esse projeto está disponivel em: [https://zaalbear.github.io/desafio_xlow_1_barcellos/](https://zaalbear.github.io/desafio_xlow_1_barcellos/).
+Esse projeto está disponivel em: [https://desafio-xlow-1-barcellos.vercel.app/](https://desafio-xlow-1-barcellos.vercel.app/).
 
 ## Licenças
 
@@ -29,7 +29,7 @@ Esse projeto está disponivel em: [https://zaalbear.github.io/desafio_xlow_1_bar
 - *Icones*: Os icones utilizados no projetos são todos disponibilizados pelo Google Icons.
 - *Imagens*: As imagens utilizadas no projeto não tem direitos autorais e são disponibilizadas gratuitamente no site Freepik.
 
-# Documentation in English
+# Documentation in English 
 
 This is a portfolio was developed to serve as a visit card to companies, recruters or fellow developers who wants to know more about my job and skills on web development. It was created using the following technologies: JavaScript, Sass, React.js, @emailjs/browser, React Hook Form
 
@@ -41,7 +41,7 @@ This is a portfolio was developed to serve as a visit card to companies, recrute
 
 ## Deploy
 
-This project is available at: [https://zaalbear.github.io/desafio_xlow_1_barcellos/](https://zaalbear.github.io/desafio_xlow_1_barcellos/).
+This project is available at: [https://desafio-xlow-1-barcellos.vercel.app/](https://desafio-xlow-1-barcellos.vercel.app/).
 
 ## Licenses
 
