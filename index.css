@@ -65,11 +65,12 @@
     background-color: var(--secundary-color);
     color: var(--gray-01);
     font-size: 1rem;
+    font-weight: 700;
 
-    border-radius: 25%;
+    border-radius: 5px;
 
-    padding: 0 .15rem;
-    margin: 0 .15rem;
+    padding: .25rem;
+    margin: .25rem;
 }
 
 .product_list {
@@ -108,6 +109,7 @@
     font-family: var(--title);
     color: var(--gray-04);
     font-size: 1rem;
+    text-align: center;
 }
 
 .alter_list {
@@ -123,6 +125,7 @@
 
 .alter_img_container {
     width: 100%;
+    max-width: 58px;
     height: 100%;
 
     overflow: hidden;
@@ -131,6 +134,8 @@
 .alter_img {
     width: 100%;
     height: 100%;
+
+    cursor: pointer;
 }
 
 .product_price {

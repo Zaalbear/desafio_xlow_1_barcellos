@@ -15,6 +15,16 @@ export const getAllProducts = async () => {
       console.error(err);
     })
 
-
   return productsList
+}
+
+export const getProduct = async (productId) => {
+  const product = await fetch(`${baseUrl}/${productId}`, {
+    method: 'GET'
+  })
+  .then(async (res) => {
+    return await res.json()
+  })
+
+  return product[0]
 }
