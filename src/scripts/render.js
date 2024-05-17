@@ -23,7 +23,8 @@ const createCard = (product) => {
     const tumb = document.createElement("img")
     const h3 = document.createElement("h3")
     const ul = document.createElement("ul")
-    const p = document.createElement("p")
+    const p1 = document.createElement("p")
+    const p2 = document.createElement("p")
     const button = document.createElement("button")
 
     tumb.src = imagesArr[0].imageUrl
@@ -38,17 +39,24 @@ const createCard = (product) => {
       })
     })
     h3.innerText = product.productName
-    p.innerText = parseFloat(product.items[0].sellers[0].commertialOffer.FullSellingPrice).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    p1.innerText = parseFloat(product.items[0].sellers[0].commertialOffer.PriceWithoutDiscount).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    p2.innerText = parseFloat(product.items[0].sellers[0].commertialOffer.FullSellingPrice).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
     button.innerText = 'COMPRAR'
 
     container.classList.add('products_item')
     tumb.classList.add('product_img')
     h3.classList.add('product_name')
     ul.classList.add('alter_list')
-    p.classList.add('product_price')
+    p1.classList.add('original_price')
+    p2.classList.add('product_price')
     button.classList.add('buy_button')
 
-    container.append(tumb, h3, ul, p, button)
+    console.log(p1);
+    console.log(p2);
+
+    p1.innerText === p2.innerText ? p1.classList.add('hide_original_price') : p1.classList.remove('hide_original_price')
+
+    container.append(tumb, h3, ul, p1, p2, button)
 
     return container
 }

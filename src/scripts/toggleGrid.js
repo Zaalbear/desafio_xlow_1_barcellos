@@ -5,11 +5,13 @@ export const toggleGrid = () => {
   console.log(button);
 
   button.addEventListener("click", function () {
-    if (window.innerWidth <= 768) {
-      // Mobile
-      if (grid.classList.contains("grid-1")) {
-        grid.classList.toggle("grid-2");
-      }
-    }
+    grid.classList.toggle("grid-2");
+    grid.classList.toggle("grid-1");
+
+        if (grid.classList.contains("grid-1")) {
+            button.style.backgroundImage = "url('./src/assets/grid_layout1_icon.svg')";
+          } else {
+            button.style.backgroundImage = "url('./src/assets/grid_layout2_icon.svg')";
+          }
   });
 };
