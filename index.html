@@ -5,31 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="./src/scripts/index.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    /* Google icons */
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <link rel="stylesheet" href="./src/styles/index.css">
     <link rel="shortcut icon" href="./src/assets/store_icon.svg" type="image/x-icon">
+
     <title>Desafio 1 xLow</title>
 </head>
 
 <body id="#root">
     <header class="header_container">
-        <img class="header_icon" src="./src/assets/store_icon.svg" alt=" generic store logo">
-        <h2 class="header_title"> Generic Store</h2>
+        <div class="header_logo_container">
+            <img class="header_icon" src="./src/assets/store_icon.svg" alt=" generic store logo">
+            <h2 class="header_title"> Generic Store</h2>
+        </div>
+        <div class="header_buttons_container">
+            <button class="cart_button"><span class="cart_counter">0</span><span
+                    class="material-symbols-outlined">shopping_bag</span></button>
+
+            <button class="menu_button"><span class="material-symbols-outlined">menu</span></button>
+        </div>
     </header>
 
     <main class="main_container">
-        <h1 class="main_title">Bem vindos a <span class="main_title-store">Generic Store</span></h1>
+        <div class="main_title_container">
+            <h1 class="main_title">Bem vindos a <span class="main_title-store">Generic Store</span></h1>
+        </div>
+
 
         <div class="products_headline">
-            <h3 class="products_title">Confira nossos <span class="products_counter">2</span> produtos:</h3>
+            <h3 class="products_title"><span class="products_counter"></span> produtos encontrados</h3>
             <button class="toggle_button"><span class="material-symbols-outlined">view_list</span></button>
         </div>
         <ul class="products_list grid grid-1"></ul>
     </main>
 
     <footer class="footer_container">
-        <h4 class="footer_text">Website desenvolvido por: <a href="https://github.com/Zaalbear" target="_blank" class="footer_text-hightlight">João Victor Barcellos</a> | <a href="https://xlow.com" target="_blank" class="footer_text-hightlight">XLOW</a></h4>
+        <h4 class="footer_text">Website desenvolvido por: <a href="https://github.com/Zaalbear" target="_blank"
+                class="footer_text-hightlight">João Victor Barcellos</a> | <a href="https://xlow.com" target="_blank"
+                class="footer_text-hightlight">XLOW</a></h4>
     </footer>
 </body>
+
 </html>
