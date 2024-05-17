@@ -3,14 +3,14 @@
 :root {
     /* Colors */
     --primary-color: #FFC107;
-    --secundary-color: #8BC34A;
+    --secundary-color: #50C878;
 
     /* Gray Scale */
     --gray-00: #ffffff;
-    --gray-01: #f0f0f0;
-    --gray-02: #a5a5a5;
+    --gray-01: #F5F5F5;
+    --gray-02: #CCCCCC;
     --gray-03: #888888;
-    --gray-04: #070707;
+    --gray-04: #333333;
 
     /* fonts */
     --title: "Roboto Slab", serif;
