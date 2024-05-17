@@ -9,9 +9,9 @@ export const toggleGrid = () => {
     grid.classList.toggle("grid-1");
 
         if (grid.classList.contains("grid-1")) {
-            button.style.backgroundImage = "url('./src/assets/grid_layout1_icon.svg')";
+            button.style.backgroundImage = "url('/src/assets/grid_layout1_icon.svg')";
           } else {
-            button.style.backgroundImage = "url('./src/assets/grid_layout2_icon.svg')";
+            button.style.backgroundImage = "url('/src/assets/grid_layout2_icon.svg')";
           }
   });
 };
