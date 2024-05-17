@@ -51,9 +51,6 @@ const createCard = (product) => {
     p2.classList.add('product_price')
     button.classList.add('buy_button')
 
-    console.log(p1);
-    console.log(p2);
-
     p1.innerText === p2.innerText ? p1.classList.add('hide_original_price') : p1.classList.remove('hide_original_price')
 
     container.append(tumb, h3, ul, p1, p2, button)

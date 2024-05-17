@@ -81,10 +81,6 @@
     border: none;
 
     cursor: pointer;
-
-    background-image: url("/src/assets/grid_layout1_icon.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .grid {
