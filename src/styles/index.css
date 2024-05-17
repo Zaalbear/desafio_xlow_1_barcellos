@@ -334,8 +334,12 @@
         font-size: 3rem;
     }
 
+    .main_title_container {
+        padding: 0 5rem;
+    }
+
     .main_title {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .products_title {

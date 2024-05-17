@@ -27,7 +27,7 @@ Esse projeto está disponivel em: [https://desafio-xlow-1-barcellos.vercel.app/]
 
 - *fontes*: As fontes utilizadas no projeto são "Roboto" e "Roboto Slab" ambas disponibilizada pelo Google Fonts.
 - *Icones*: Os icones utilizados no projetos são todos disponibilizados pelo Google Icons.
-- *Imagens*: As imagens utilizadas no projeto não tem direitos autorais e são disponibilizadas gratuitamente no site Freepik.
+- *Imagens*: As imagens utilizadas no projeto não tem direitos autorais e são disponibilizadas gratuitamente no site Pexels.
 
 # Documentation in English 
 
@@ -47,4 +47,4 @@ This project is available at: [https://desafio-xlow-1-barcellos.vercel.app/](htt
 
 - *Fonts*: The fonts used in the project are "Roboto" and "Roboto Slab," both provided by Google Fonts.
 - *Icons*: The icons used in the project are all provided by Google Icons.
-- *Images*: The images used in the project are copyright-free and are provided for free on the website Freepik.
+- *Images*: The images used in the project are copyright-free and are provided for free on the website Pexels.
