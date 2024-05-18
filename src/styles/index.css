@@ -15,17 +15,25 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1000;
 
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header_content {
+    width: 90%;
+    max-width: 1440px;
+
+    display: flex;
+    align-items: center;
 }
 
 .header_logo_container {
-    width: 70%;
+    width: 100%;
     height: 100%;
 
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: .5rem;
 }
 
@@ -37,6 +45,10 @@
 
     background-color: var(--primary-color);
     border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header_title {
@@ -58,6 +70,8 @@
     background-color: transparent;
     border: none;
 
+    color: var(--gray-02);
+
     position: relative;
 }
 
@@ -74,14 +88,15 @@
     font-weight: 500;
     color: var(--gray-00);
 
-    background-color: var(--secundary-color);
+    background-color: var(--secondary-color);
 }
 
 
 .main_container {
     width: 90%;
     max-width: 1440px;
-    height: fit-content;
+
+    margin: 7rem auto 0;
 
     display: flex;
     flex-direction: column;
@@ -92,7 +107,7 @@
     width: fit-content;
     height: 200px;
 
-    margin: 10rem 0 4rem;
+    margin: 2rem 0;
 
     background-image: url(../assets/banner_img.jpg);
     background-size: cover;
@@ -137,7 +152,7 @@
     font-family: var(--text);
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--secundary-color);
+    color: var(--secondary-color);
 }
 
 .toggle_button {
@@ -152,7 +167,7 @@
 
 .grid {
     display: grid;
-    gap: .5rem;
+    gap: 1rem;
 }
 
 .grid.grid-1 {
@@ -176,46 +191,53 @@
     max-width: 15rem;
     height: fit-content;
     min-height: 30rem;
-    padding: .25rem;
 
+    padding: 1rem;
     margin: 1rem .5rem;
 
     background-color: var(--gray-00);
 
     border-radius: 10px;
 
-    box-shadow: 0px 0px 10px 0px var(--gray-03);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: .5rem;
+
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .products_item:hover {
-    box-shadow: 0px 0px 10px 0px var(--secundary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .product_img {
     width: 100%;
     height: 200px;
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
 }
 
 .product_name {
     height: 50px;
+
+    margin: 0.5rem 0;
 
     font-family: var(--title);
     font-weight: 500;
     color: var(--gray-03);
     font-size: 1rem;
     text-align: center;
+    
 }
 
 .alter_list {
     width: 50%;
     height: 50px;
+
+    margin: .5rem;
 
     display: flex;
     align-items: center;
@@ -237,6 +259,14 @@
     height: 100%;
 
     cursor: pointer;
+
+    border-radius: 50%;
+
+    transition: transform 0.3s;
+}
+
+.alter_img:hover {
+    transform: scale(1.1);
 }
 
 .original_price {
@@ -267,10 +297,10 @@
 .buy_button {
     width: 75%;
     height: 50px;
-    background-color: var(--gray-01);
+    background-color: var(--gray-00);
 
     border-radius: 15px;
-    border: 1px solid var(--secundary-color);
+    border: 1px solid var(--secondary-color);
 
     margin: 1rem 0;
 
@@ -279,15 +309,17 @@
     padding: .5rem .15rem;
 
     font-family: var(--text);
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 700;
-    color: var(--secundary-color);
+    color: var(--secondary-color);
+
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .buy_button:hover {
-    background-color: var(--secundary-color);
-    border-color: var(--gray-01);
-    color: var(--gray-01);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--gray-00);
 }
 
 .footer_container {
@@ -301,6 +333,8 @@
     justify-content: center;
     gap: 1rem;
 
+    border-top: 2px solid var(--primary-color);
+    margin-top: 2rem;
 }
 
 .footer_text {
@@ -313,6 +347,8 @@
     color: var(--gray-04);
 
     cursor: pointer;
+
+    transition: color 0.3s;
 }
 
 .footer_text-hightlight:hover {
@@ -332,6 +368,10 @@
 
     .header_title {
         font-size: 3rem;
+    }
+
+    .menu_button {
+        display: none;
     }
 
     .main_title_container {
